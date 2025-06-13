@@ -9,10 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack {
-            DayForecast(day: "Mon", isRainy: false, high: 70, low: 50)
-            
-            DayForecast(day: "Tue", isRainy: true, high: 60, low: 40)
+        ScrollView(.horizontal) {
+            HStack {
+                DayForecast(day: "Mon", isRainy: false, high: 70, low: 50)
+                
+                DayForecast(day: "Tue", isRainy: true, high: 60, low: 40)
+                DayForecast(day: "Wed", isRainy: true, high: 60, low: 40)
+                DayForecast(day: "Thu", isRainy: true, high: 60, low: 40)
+                DayForecast(day: "Fri", isRainy: true, high: 60, low: 40)
+            }
         }
     }
 }
